@@ -21,4 +21,12 @@ const mapStateToProps = state => {
   return { restaurants: state.restaurants }
 }
 
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     addRestaurant: () => {
+//       dispatch(addRestaurant())
+//     }
+//   };
+// };
+
 export default connect(mapStateToProps)(Restaurants);
