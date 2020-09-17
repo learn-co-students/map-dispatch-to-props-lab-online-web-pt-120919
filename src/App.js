@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-import RestaurantInput from './components/RestaurantInput';
-import Restaurants from './components/Restaurants';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+
+import RestaurantInput from "./components/RestaurantInput";
+import Restaurants from "./components/Restaurants";
 
 export class App extends Component {
   render() {
@@ -11,6 +13,9 @@ export class App extends Component {
       </div>
     );
   }
+}
+const mapStateToProps = state => {
+  return state;
 };
 
 export default App;
